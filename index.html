@@ -3,14 +3,43 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Yugioh Card's Information</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!-- Contains the entire patge -->
+        <div class="pageContainer">
+            <!-- contains search bar, randome, and possibly filters -->
+            <div class="topContainer">
+                <form action="" id="searchingCardsForm">
+                    <label for="cardSearchInput">Search for a specific Card:</label>
+                    <input type="search" id="cardSearchInput">
+                    <button id="cardSearchButton" type="button" >Search</button>
+                </form>
+                <!-- Button for Random card -->
+                <button id="randomCardButton">Random Card</button>
+            </div>
 
+            <div class="middleContainer">
+                
+                <!-- conteain the actual images and description of the cards -->
+                <div id="midImageContainer">
+                    <!-- Title/name of the card -->
+                    <div class="midImageTitle"></div>
+                    <!-- image of the card -->
+                    <img src="" alt="" class="midImageItself">
+                    <!-- container for text of card -->
+                    <div class="midImageTextContainer">
+                        <!-- The description of the card -->
+                        <p class="midImageText"></p>
+                    </div>
+                </div>
+            </div>
 
-        <script src="app.mjs" async defer></script>
+        </div>
+
+        <script src="app.mjs" type="module" async defer></script>
     </body>
 </html>
