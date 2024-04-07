@@ -18,14 +18,36 @@ export const randomCardGetter = async () => {
     const cardDescription = document.querySelector('.midCardText');
 
     const randomResponse = await fetch('https://db.ygoprodeck.com/api/v7/randomcard.php');
-    console.log(randomResponse);
+    // console.log(randomResponse);
     const jsonData = await randomResponse.json();
     console.log(jsonData);
-    console.log(jsonData.name);
+    // console.log(jsonData.name);
     cardName.innerHTML = jsonData.name;
-    console.log(jsonData.desc)
+    // console.log(jsonData.desc)
     const url = jsonData.card_images[0].image_url;
-    console.log(url)
+    // console.log(url)
     cardImage.setAttribute('src', url);
     cardDescription.innerText = jsonData.desc;
+    randomCardAttributes(jsonData)
+}
+
+//Query selecting all attributes needed for card types
+const randomCardAttributes = async (json) => {
+    const typeDescription = document.querySelector('.typeStatistic').children[2]
+    const attributeDescription = document.querySelector('.attributeStatistic').children[2]
+    const levelOrRankDescription = document.querySelector('.levelOrRankStatistic').children[2]
+    const attackDescription = document.querySelector('.attackStatistic').children[2]
+    const defenceDescription = document.querySelector('.defenceStatistic').children[2]
+    const linkDescription = document.querySelector('.linkStatistic').children[2]
+    const archetypeDescription = document.querySelector('.archetypeStatistic').children[2]
+        //Unable to find tcg and ocg release date in the api provided, possible separate api or special parameter 
+    // const tcgReleaseDescription = document.querySelector('.tcgReleaseStatistic').children[2]    
+    // const ocgReleaseDescription = document.querySelector('.ocgReleaseStatistic').children[2]
+    console.log('hello')
+    console.log(await json)
+    const arrPossibleAttributes = ['type', 'attribute','race','level','atk','def','archetype']
+    const keyValuePairs = Object.entries(json)
+    console.log(keyValuePairs)
+
+    
 }

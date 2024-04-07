@@ -112,7 +112,7 @@ body{
                 }
                         .titleStatistic{
                             border: solid orange;
-                            font-size: medium
+                            font-size: small
                         }
                         .descriptionStatistic{
                             border: solid orange;
@@ -121,42 +121,52 @@ body{
                     .typeStatistic{
                         border: solid purple;
                         background-color: rgb(6, 82, 44);
+                        display: none;
                     }
                     .attributeStatistic{
                         border: solid purple;
                         background-color: rgb(6, 82, 44);
+                        display: none;
                     }
                     .typingStatistic{
                         border: solid purple;
                         background-color: rgb(6, 82, 44);
+                        display: none;
                     }
                     .levelOrRankStatistic{
                         border: solid purple;
                         background-color: rgb(6, 82, 44);
+                        display: none;
                     }
                     .attackStatistic{
                         border: solid purple;
                         background-color: rgb(6, 82, 44);
+                        display: none;
                     }
                     .defenceStatistic{
                         border: solid purple;
                         background-color: rgb(6, 82, 44);
+                        display: none;
                     }
                     .linkStatistic{
                         border: solid purple;
                         background-color: rgb(6, 82, 44);
+                        display: none;
                     }
                     .archetypeStatistic{
                         border: solid purple;
                         background-color: rgb(6, 82, 44);
+                        display: none;
                     }
                     .tcgReleaseStatistic{
                         border: solid purple;
                         background-color: rgb(6, 82, 44);
+                        display: none;
                     }
                     .ocgReleaseStatistic{
                         border: solid purple;
                         background-color: rgb(6, 82, 44);
+                        display: none;
                     }                
                 .midCardTextContainer{
                     border: solid hotpink;
