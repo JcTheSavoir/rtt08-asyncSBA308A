@@ -87,11 +87,13 @@ body{
         #midCardContainer{
             display: flex;
             border: solid red;
-            justify-content: space-around;
+            justify-content: center;
+            height: 60vh;
         }
             .midCardImage{
                 border: solid green;
-                width: 40vw;
+                /* width: 40vw; */
+                margin-right: 10px;
             }
             .midCardInformationContainer{
                 border: solid green;
@@ -99,12 +101,73 @@ body{
             }
                 .midCardTitle{
                     border: solid hotpink;
+                    margin-top: 0;
                 }
+                .midCardStatisticContainer{
+                    border: solid hotpink;
+                    display: grid;
+                    gap: 10px;
+                    grid-template-columns: repeat(3, 1fr);
+                    color: white;
+                }
+                        .titleStatistic{
+                            border: solid orange;
+                            font-size: medium
+                        }
+                        .descriptionStatistic{
+                            border: solid orange;
+                            font-size: x-large
+                        }
+                    .typeStatistic{
+                        border: solid purple;
+                        background-color: rgb(6, 82, 44);
+                    }
+                    .attributeStatistic{
+                        border: solid purple;
+                        background-color: rgb(6, 82, 44);
+                    }
+                    .typingStatistic{
+                        border: solid purple;
+                        background-color: rgb(6, 82, 44);
+                    }
+                    .levelOrRankStatistic{
+                        border: solid purple;
+                        background-color: rgb(6, 82, 44);
+                    }
+                    .attackStatistic{
+                        border: solid purple;
+                        background-color: rgb(6, 82, 44);
+                    }
+                    .defenceStatistic{
+                        border: solid purple;
+                        background-color: rgb(6, 82, 44);
+                    }
+                    .linkStatistic{
+                        border: solid purple;
+                        background-color: rgb(6, 82, 44);
+                    }
+                    .archetypeStatistic{
+                        border: solid purple;
+                        background-color: rgb(6, 82, 44);
+                    }
+                    .tcgReleaseStatistic{
+                        border: solid purple;
+                        background-color: rgb(6, 82, 44);
+                    }
+                    .ocgReleaseStatistic{
+                        border: solid purple;
+                        background-color: rgb(6, 82, 44);
+                    }                
                 .midCardTextContainer{
                     border: solid hotpink;
                 }
+                    #cardTextTitle{
+                        border: solid purple;
+                        margin: 1em 0 .5em 0;
+                    }
                     .midCardText{
                         border: solid purple;
+                        margin: 0;
                     }
 
     .bottomContainer{
