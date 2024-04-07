@@ -1,5 +1,5 @@
 //-------------{import section}--------------
-import { allCardNames, randomCardGetter } from "./exportDataTwo.mjs"
+import { allCardNames, randomCardGetter } from "/jsModulesSBA308A/exportDataTwo.mjs"
 
 
 //-------------{Initialized functions}----------
@@ -18,11 +18,11 @@ console.log(randomButton)
 
 //--------------{dom manipulation}------------
     //--{search button}---
-const checkforNameEvent = () => {
-    const enteredName = userEnteredInput.value; 
-    console.log(enteredName)
-};
-searchButton.addEventListener('click', checkforNameEvent)
+// const checkforNameEvent = () => {
+//     const enteredName = userEnteredInput.value; 
+//     console.log(enteredName)
+// };
+// searchButton.addEventListener('click', checkforNameEvent)
 
     //--{random button}--
 const randomCardEvent = () => {

@@ -1,0 +1,124 @@
+*{
+    border: solid brown;
+    min-height: 20px;
+}
+body{
+    margin: 0;
+    /* border: 0; */
+}
+
+.pageContainer{
+    border: solid black;
+    min-height: 200vh;
+}
+
+    .topContainer{
+        border: solid blue;
+    }
+        .navBarContainer{
+            background-color: rgb(6, 82, 44);
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            display: flex;
+            border: solid red;
+            justify-content: space-between;
+        }
+            .logoContainer{
+                border: solid green;
+                width: 50%;
+                display: flex;
+                height: 5vh;
+            }
+                #mainLogo{
+                    border: solid hotpink;
+                    min-height: fit-content;
+                }
+            .pageLinks{
+                border: solid green;
+                display: flex;
+                justify-content: flex-end;
+                width: 50%;
+                height: 5vh;
+                text-decoration: none;
+            }
+                #randomPageLink{
+                    border: solid hotpink;
+                    display: flex;
+                    text-decoration: none;
+                    color: lightgray;
+                    font-size: 2.5vh;
+                    align-items: center;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+                #searchPageLink{
+                    border: solid hotpink;
+                    display: flex;
+                    text-decoration: none;
+                    color: lightgray;
+                    font-size: 2.5vh;
+                    align-items: center;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+        .spacerForNavBar{
+            margin-bottom: 5vh;
+            min-height: 0;
+            border: 0;
+        }
+        .buttonContainer{
+            border: solid blue;
+            text-align: center;
+            padding-top: 1vh;
+            margin-bottom: 1vh;
+        }
+            #randomCardButton{
+                border: solid green;
+                /* margin: auto; */
+
+            }
+
+    .middleContainer{
+        border: solid blue;
+        width: 100%;
+    }
+        #midCardContainer{
+            display: flex;
+            border: solid red;
+            justify-content: space-around;
+        }
+            .midCardImage{
+                border: solid green;
+                width: 40vw;
+            }
+            .midCardInformationContainer{
+                border: solid green;
+                width: 40vw;
+            }
+                .midCardTitle{
+                    border: solid hotpink;
+                }
+                .midCardTextContainer{
+                    border: solid hotpink;
+                }
+                    .midCardText{
+                        border: solid purple;
+                    }
+
+    .bottomContainer{
+        border: solid blue;
+    }
+        .developerName{
+            border: solid red;
+        }
+        .contributingSourceContainer{
+            border: solid red;
+        }
+            .apiUsed{
+                border: solid green;
+            }
+            .designInspiration{
+                border: solid green;
+            }

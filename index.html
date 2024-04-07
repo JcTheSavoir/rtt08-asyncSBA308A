@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Yugioh Card's Information</title>
+        <title>Yugioh Card Random</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -13,31 +13,48 @@
         <div class="pageContainer">
             <!-- contains search bar, randome, and possibly filters -->
             <div class="topContainer">
-                <form action="" id="searchingCardsForm">
-                    <label for="cardSearchInput">Search for a specific Card:</label>
-                    <input type="search" id="cardSearchInput">
-                    <button id="cardSearchButton" type="button" >Search</button>
-                </form>
+                <div class="navBarContainer">
+                    <div class="logoContainer">
+                        <img src="https://img.yugioh-card.com/en/wp-content/uploads/2020/04/logo-main.png" alt="" id="mainLogo">
+                    </div>
+                    <div class="pageLinks">
+                        <a href="index.html" id="randomPageLink"><div>Random</div></a>
+                        <a href="search.html" id="searchPageLink"><div>Search</div></a>
+                    </div>
+                </div>
+                <div class="spacerForNavBar"></div>
                 <!-- Button for Random card -->
-                <button id="randomCardButton">Random Card</button>
+                <div class="buttonContainer">
+                    <button id="randomCardButton">Random Card</button>
+                </div>
             </div>
-
+            
             <div class="middleContainer">
-                
                 <!-- conteain the actual images and description of the cards -->
-                <div id="midImageContainer">
-                    <!-- Title/name of the card -->
-                    <div class="midImageTitle"></div>
-                    <!-- image of the card -->
-                    <img src="" alt="" class="midImageItself">
-                    <!-- container for text of card -->
-                    <div class="midImageTextContainer">
-                        <!-- The description of the card -->
-                        <p class="midImageText"></p>
+                <div id="midCardContainer">
+                    <!-- Image of the card -->
+                    <img src="" alt="" class="midCardImage">
+                    <!-- container for the rest of the cards information -->
+                    <div class="midCardInformationContainer">
+                        <!-- Title/name of the card -->
+                        <div class="midCardTitle"></div>
+                        <!-- container for text of card -->
+                        <div class="midCardTextContainer">
+                            <!-- The description of the card -->
+                            <p class="midCardText"></p>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <!-- bottom container/footer -->
+            <div class="bottomContainer">
+                <div class="developerName"></div>
+                <div class="contributingSourceContainer">
+                    <div class="apiUsed"></div>
+                    <div class="designInspiration"></div>
+                </div>
+            </div>
         </div>
 
         <script src="app.mjs" type="module" async defer></script>
