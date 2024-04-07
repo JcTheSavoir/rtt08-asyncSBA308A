@@ -1,6 +1,6 @@
 *{
-    border: solid brown;
-    min-height: 20px;
+    /* border: solid brown; */
+    /* min-height: 20px; */
 }
 body{
     margin: 0;
@@ -75,7 +75,8 @@ body{
             margin-bottom: 1vh;
         }
             #randomCardButton{
-                border: solid green;
+                /* border: solid green; */
+
                 /* margin: auto; */
 
             }
