@@ -9,7 +9,10 @@ body{
 
 .pageContainer{
     border: solid black;
-    min-height: 200vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
 }
 
     .topContainer{
@@ -69,16 +72,21 @@ body{
             border: 0;
         }
         .buttonContainer{
-            border: solid blue;
+            height: 10vh;
             text-align: center;
-            padding-top: 1vh;
-            margin-bottom: 1vh;
+            margin: 2vh;
         }
             #randomCardButton{
-                /* border: solid green; */
-
-                /* margin: auto; */
-
+                height: 100%;
+                width: 20%;
+                font-size: 100%;
+                font-weight: 800;
+                color: lightblue;
+                background-color: rgb(0, 137, 179);
+                border-radius: 25%;
+            }
+            #randomCardButton:hover{
+                background-color: rgb(3, 219, 50);
             }
 
     .middleContainer{
@@ -98,7 +106,7 @@ body{
             }
             .midCardInformationContainer{
                 border: solid green;
-                width: 40vw;
+                max-width: 40vw;
             }
                 .midCardTitle{
                     border: solid hotpink;
@@ -113,11 +121,11 @@ body{
                 }
                         .titleStatistic{
                             border: solid orange;
-                            font-size: small
+                            font-size: 75%
                         }
                         .descriptionStatistic{
                             border: solid orange;
-                            font-size: x-large
+                            font-size: 100%
                         }
                     .typeStatistic{
                         border: solid purple;
@@ -183,16 +191,27 @@ body{
 
     .bottomContainer{
         border: solid blue;
-    }
-        .developerName{
+        height: 20vh;
+    }   
+        .developerContainer{
             border: solid red;
+            height: 50%;
         }
+            .startedOn{
+                margin: 10px;
+            }    
+            .developerName{
+                border: solid red;
+                margin: 10px;
+            }
         .contributingSourceContainer{
             border: solid red;
         }
             .apiUsed{
                 border: solid green;
+                margin: 10px;
             }
             .designInspiration{
                 border: solid green;
+                margin: 10px;
             }
