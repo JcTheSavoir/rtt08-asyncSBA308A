@@ -3,20 +3,19 @@
     /* min-height: 20px; */
 }
 body{
+    background-image: repeating-conic-gradient(red 10%, yellow 20%);
     margin: 0;
     /* border: 0; */
 }
 
 .pageContainer{
-    border: solid black;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
+    /* border: solid black; */
+    /* min-height: 100vh; */
+
 }
 
     .topContainer{
-        border: solid blue;
+        /* border: solid blue; */
     }
         .navBarContainer{
             background-color: rgb(6, 82, 44);
@@ -25,21 +24,21 @@ body{
             right: 0;
             left: 0;
             display: flex;
-            border: solid red;
+            /* border: solid red; */
             justify-content: space-between;
         }
             .logoContainer{
-                border: solid green;
+                /* border: solid green; */
                 width: 50%;
                 display: flex;
                 height: 5vh;
             }
                 #mainLogo{
-                    border: solid hotpink;
+                    /* border: solid hotpink; */
                     min-height: fit-content;
                 }
             .pageLinks{
-                border: solid green;
+                /* border: solid green; */
                 display: flex;
                 justify-content: flex-end;
                 width: 50%;
@@ -47,7 +46,7 @@ body{
                 text-decoration: none;
             }
                 #randomPageLink{
-                    border: solid hotpink;
+                    /* border: solid hotpink; */
                     display: flex;
                     text-decoration: none;
                     color: lightgray;
@@ -57,7 +56,7 @@ body{
                     margin-right: 5px;
                 }
                 #searchPageLink{
-                    border: solid hotpink;
+                    /* border: solid hotpink; */
                     display: flex;
                     text-decoration: none;
                     color: lightgray;
@@ -69,12 +68,12 @@ body{
         .spacerForNavBar{
             margin-bottom: 5vh;
             min-height: 0;
-            border: 0;
+            /* border: 0; */
         }
         .buttonContainer{
             height: 10vh;
             text-align: center;
-            margin: 2vh;
+            margin: 120px 0 70px 0;
         }
             #randomCardButton{
                 height: 100%;
@@ -90,128 +89,158 @@ body{
             }
 
     .middleContainer{
-        border: solid blue;
+        /* border: solid blue; */
         width: 100%;
     }
         #midCardContainer{
             display: flex;
-            border: solid red;
+            /* border: solid red; */
             justify-content: center;
-            height: 60vh;
+            height: 55vh;
         }
             .midCardImage{
-                border: solid green;
+                /* border: solid green; */
                 /* width: 40vw; */
                 margin-right: 10px;
             }
             .midCardInformationContainer{
-                border: solid green;
+                /* border: solid green; */
                 max-width: 40vw;
             }
                 .midCardTitle{
-                    border: solid hotpink;
+                    /* border: solid hotpink; */
                     margin-top: 0;
                 }
                 .midCardStatisticContainer{
-                    border: solid hotpink;
+                    /* border: solid hotpink; */
                     display: grid;
                     gap: 10px;
                     grid-template-columns: repeat(3, 1fr);
                     color: white;
                 }
                         .titleStatistic{
-                            border: solid orange;
-                            font-size: 75%
+                            /* border: solid orange; */
+                            font-size: 75%;
                         }
                         .descriptionStatistic{
-                            border: solid orange;
+                            /* border: solid orange; */
                             font-size: 100%
                         }
                     .typeStatistic{
-                        border: solid purple;
+                        border-radius: 7%;
+                        padding: 4%;
+                        /* border: solid purple; */
                         background-color: rgb(6, 82, 44);
                         display: none;
                     }
                     .attributeStatistic{
-                        border: solid purple;
+                        border-radius: 7%;
+                        padding: 4%;
+                        /* border: solid purple; */
                         background-color: rgb(6, 82, 44);
                         display: none;
                     }
                     .typingStatistic{
-                        border: solid purple;
+                        border-radius: 7%;
+                        padding: 4%;
+                        /* border: solid purple; */
                         background-color: rgb(6, 82, 44);
                         display: none;
                     }
                     .levelOrRankStatistic{
-                        border: solid purple;
+                        border-radius: 7%;
+                        padding: 4%;
+                        /* border: solid purple; */
                         background-color: rgb(6, 82, 44);
                         display: none;
                     }
                     .attackStatistic{
-                        border: solid purple;
+                        border-radius: 7%;
+                        padding: 4%;
+                        /* border: solid purple; */
                         background-color: rgb(6, 82, 44);
                         display: none;
                     }
                     .defenceStatistic{
-                        border: solid purple;
+                        border-radius: 7%;
+                        padding: 4%;
+                        /* border: solid purple; */
                         background-color: rgb(6, 82, 44);
                         display: none;
                     }
                     .linkStatistic{
-                        border: solid purple;
+                        border-radius: 7%;
+                        padding: 4%;
+                        /* border: solid purple; */
                         background-color: rgb(6, 82, 44);
                         display: none;
                     }
                     .archetypeStatistic{
-                        border: solid purple;
+                        border-radius: 7%;
+                        padding: 4%;
+                        /* border: solid purple; */
                         background-color: rgb(6, 82, 44);
                         display: none;
                     }
                     .tcgReleaseStatistic{
-                        border: solid purple;
+                        border-radius: 7%;
+                        padding: 4%;
+                        /* border: solid purple; */
                         background-color: rgb(6, 82, 44);
                         display: none;
                     }
                     .ocgReleaseStatistic{
-                        border: solid purple;
+                        border-radius: 7%;
+                        padding: 4%;
+                        /* border: solid purple; */
                         background-color: rgb(6, 82, 44);
                         display: none;
                     }                
                 .midCardTextContainer{
-                    border: solid hotpink;
+                    /* border: solid hotpink; */
                 }
                     #cardTextTitle{
-                        border: solid purple;
+                        /* border: solid purple; */
                         margin: 1em 0 .5em 0;
                     }
                     .midCardText{
-                        border: solid purple;
+                        /* border: solid purple; */
                         margin: 0;
                     }
 
     .bottomContainer{
-        border: solid blue;
-        height: 20vh;
+        /* border: solid blue; */
+        /* height: 250px; */
+        margin-top: 200px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(6, 82, 44);
+        color: whitesmoke;
     }   
+            .apiLink{
+                text-decoration: none;
+                color: blanchedalmond;
+            }
         .developerContainer{
-            border: solid red;
-            height: 50%;
+            /* border: solid red; */
+            /* height: 50%; */
         }
             .startedOn{
-                margin: 10px;
+                margin: 0 0 0 20px;
             }    
             .developerName{
-                border: solid red;
-                margin: 10px;
+                /* border: solid red; */
+                margin: 5px 0 0 20px;
             }
         .contributingSourceContainer{
-            border: solid red;
+            /* border: solid red; */
         }
             .apiUsed{
-                border: solid green;
-                margin: 10px;
+                /* border: solid green; */
+                margin: 0 0 0 20px;
             }
             .designInspiration{
-                border: solid green;
-                margin: 10px;
+                /* border: solid green; */
+                margin: 5px 0 0 20px;
             }
